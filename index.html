@@ -619,7 +619,7 @@
                 <span class="my-step-counter mb-1"></span>
                 <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.android.first.title')"></h5>
                 <p class="my-text-content" x-html="$t('guideContent.android.first.text')"></p>
-                <a class="btn my-btn-secondary" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" rel="noopener noreferrer" target="_blank">
+                <a class="btn my-btn-secondary" href="https://play.google.com/store/apps/details?id=com.happproxy" role="button" rel="noopener noreferrer" target="_blank">
                   <span x-text="$t('openInApp', {app: 'Google Play'})"></span>
                 </a>
               </div>
@@ -678,21 +678,21 @@
                 <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.pc.first.title')"></h5>
                 <p class="my-text-content" x-html="$t('guideContent.pc.first.text')"></p>
                 <div class="d-flex flex-wrap gap-2">
-                  <!-- Install the latest pre-release version, because Hiddify,
+                  <!-- Install the latest pre-release version, because Happ,
                        for some damn reason, stopped updating -->
-                  <a class="btn my-btn-secondary" href="https://github.com/hiddify/hiddify-app/releases/download/v2.5.7/Hiddify-Windows-Setup-x64.exe" role="button" rel="noopener noreferrer" target="_blank">
+                  <a class="btn my-btn-secondary" href="https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe" role="button" rel="noopener noreferrer" target="_blank">
                     Windows
                   </a>
-                  <a class="btn my-btn-secondary" href="https://github.com/hiddify/hiddify-app/releases/download/v2.5.7/Hiddify-MacOS.dmg" role="button" rel="noopener noreferrer" target="_blank">
+                  <a class="btn my-btn-secondary" href="https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.dmg" role="button" rel="noopener noreferrer" target="_blank">
                     macOS v10.15+
                   </a>
-                  <a class="btn my-btn-secondary" href="https://github.com/hiddify/hiddify-app/releases/download/v2.5.7/Hiddify-Linux-x64.AppImage" role="button" rel="noopener noreferrer" target="_blank">
+                  <a class="btn my-btn-secondary" href="https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.AppImage" role="button" rel="noopener noreferrer" target="_blank">
                     Linux AppImage
                   </a>
-                  <a class="btn my-btn-secondary" href="https://github.com/hiddify/hiddify-app/releases/download/v2.5.7/Hiddify-Debian-x64.deb" role="button" rel="noopener noreferrer" target="_blank">
+                  <a class="btn my-btn-secondary" href="https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.deb" role="button" rel="noopener noreferrer" target="_blank">
                     Linux Deb
                   </a>
-                  <a class="btn my-btn-secondary" href="https://github.com/hiddify/hiddify-app/releases/download/v2.5.7/Hiddify-rpm-x64.rpm" role="button" rel="noopener noreferrer" target="_blank">
+                  <a class="btn my-btn-secondary" href="https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.rpm" role="button" rel="noopener noreferrer" target="_blank">
                     Linux RPM
                   </a>
                 </div>
@@ -726,8 +726,8 @@
 
       // URL schemes for quick subscription import.
       const SUB_URL_SCHEMES = {
-        pc: `hiddify://import/${SUB_URL}`,
-        android: `hiddify://import/${SUB_URL}`,
+        pc: `happ://add/${SUB_URL}#AnchorVPN`,
+        android: `happ://add/${SUB_URL}#AnchorVPN`,
         ios: `v2raytun://import/${SUB_URL}`,
       };
       // Default locale used to display content if
